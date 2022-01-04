@@ -29,14 +29,14 @@ for (let i = 1; i <= 4; i++){
 } 
 navPart.appendChild(ulPart);
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-// add active class to active sections 
+// add active class to active sections
 // we have 4 sections 
 const aboutUsPart = document.querySelector('section.about-us');
 const productsPart = document.querySelector('section.products');
 const rawMaterialsPart = document.querySelector('section.raw-materials');
 const cuntactUsPart = document.querySelector('section.contact-us');
 // this code need more modefication to make it compatible with (media query) . I will make it. (done)
-document.body.onscroll = function () {
+document.addEventListener('scroll', function () {
     // console.log('omar');
     // document.documentElement.scrollTop
     // console.log(document.documentElement.scrollTop);
@@ -105,4 +105,5 @@ document.body.onscroll = function () {
         if (document.documentElement.scrollTop < view7 || document.documentElement.scrollTop > view8) {
         cuntactUsPart.classList.remove('active')
     }
-};
+});
+
