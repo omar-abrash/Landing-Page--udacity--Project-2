@@ -37,6 +37,7 @@ const rawMaterialsPart = document.querySelector('section.raw-materials');
 const cuntactUsPart = document.querySelector('section.contact-us');
 // this code need more modefication to make it compatible with (media query) . I will make it. (done)
 document.body.onscroll = function () {
+    // console.log('omar');
     // document.documentElement.scrollTop
     // console.log(document.documentElement.scrollTop);
     const viewElement = aboutUsPart.clientHeight;
@@ -53,12 +54,12 @@ document.body.onscroll = function () {
     // first : select the media query depend on viewElement clinetHieght
     if (viewElement >= 2024) { // very small screens
         view1 = 400;
-        view2 = 2300;
-        view3 = 2301;
-        view4 = 4400;
-        view5 = 4401;
-        view6 = 6400;
-        view7 = 6401;
+        view2 = 2500;
+        view3 = 2501;
+        view4 = 4500;
+        view5 = 4501;
+        view6 = 6500;
+        view7 = 6501;
         view8 = 8500;
     } else if (viewElement == 1199) { // small screens
         view1 = 500;
@@ -66,18 +67,18 @@ document.body.onscroll = function () {
         view3 = 1801;
         view4 = 3200;
         view5 = 3201;
-        view6 = 4500;
-        view7 = 4501;
-        view8 = 5800;
+        view6 = 4300;
+        view7 = 4301;
+        view8 = 5500;
     } else { // other screens
         view1 = 300;
-        view2 = 1000;
-        view3 = 1001;
-        view4 = 1700;
-        view5 = 1701;
-        view6 = 2400;
-        view7 = 2401;
-        view8 = 4100;
+        view2 = 1300;
+        view3 = 1301;
+        view4 = 2000;
+        view5 = 2001;
+        view6 = 3000;
+        view7 = 3001;
+        view8 = 4000;
     }
     // finally : determine active state for each parts
     if (document.documentElement.scrollTop >= view1 || document.documentElement.scrollTop <= view2) {
